@@ -6,8 +6,8 @@
     "technologies": "Javascript, CSS, HTML" ,
     "live_link": "https://franklynrod.github.io/random-quote-generator/",
     "github_link": "https://github.com/FranklynRod/random-quote-generator" ,
-    "image_urls": "/images/RandomQuoteGenerator2.png",
-    "homepage_image": "/images/RandomQuoteGenerator.png" },
+    "image_urls": "/static/images/RandomQuoteGenerator2.png",
+    "homepage_image": "/static/images/RandomQuoteGenerator.png" },
 
     {"id":1,
    "project_name": "Data Pagination and Filtering",
@@ -15,8 +15,8 @@
     "technologies": ["Javascript", "CSS", "HTML"] ,
     "live_link": "https://franklynrod.github.io/data-pagination-filtering/",
     "github_link": "https://github.com/FranklynRod/data-pagination-filtering" ,
-    "image_urls":"/images/EmployeeDirectory2.png",
-    "homepage_image":"/images/EmployeeDirectory.png" },
+    "image_urls":"/static/images/EmployeeDirectory2.png",
+    "homepage_image":"/static/images/EmployeeDirectory.png" },
 
     {"id": 2,
     "project_name": "Interactive Form",
@@ -24,8 +24,8 @@
      "technologies": ["Javascript", "CSS", "HTML"] ,
      "live_link": "https://franklynrod.github.io/interactive-form/",
      "github_link": "https://github.com/FranklynRod/interactive-form" ,
-     "image_urls": "/images/InteractiveForm2.png",
-     "homepage_image":"/images/InteractiveForm.png" },
+     "image_urls": "/static/images/InteractiveForm2.png",
+     "homepage_image":"/static/images/InteractiveForm.png" },
 
      {"id":3,
      "project_name": "OOP Game Show",
@@ -33,8 +33,8 @@
       "technologies": ["Javascript", "CSS", "HTML"] ,
       "live_link": "https://franklynrod.github.io/OOP_Game/",
       "github_link": "https://github.com/FranklynRod/OOP_Game" ,
-      "image_urls":"/images/OOPGame2.png",
-      "homepage_image":"/images/OOPGame.png" },
+      "image_urls":"/static/images/OOPGame2.png",
+      "homepage_image":"/static/images/OOPGame.png" },
 
       {"id":4,
       "project_name": "Public API Requests",
@@ -42,8 +42,8 @@
        "technologies": ["Javascript", "CSS", "HTML"] ,
        "live_link": "https://franklynrod.github.io/employee_directory/",
        "github_link": "https://github.com/FranklynRod/employee_directory" ,
-       "image_urls":"/images/API2.png",
-       "homepage_image":"/images/API.png" }
+       "image_urls":"/static/images/API2.png",
+       "homepage_image":"/static/images/API.png" }
 
 ]
 }
