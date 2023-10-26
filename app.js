@@ -24,11 +24,12 @@ app.get('/about',(req,res) =>{
 // GET Projects
 app.get('/projects/:id',(req,res) =>{
     const projectId = req.params.id
-    const foundId = projects.find(({id}) => id === parseInt(projectId))
-    res.render('project',{foundId});
+    const project= projects.find(({id}) => id === parseInt(projectId))
+    res.render('project',{project: project});
 })
 
 // Errors
+
 
 app.listen(3000, () => {
     console.log('Serves Port 3000')
