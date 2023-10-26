@@ -3,10 +3,10 @@
     {"id":0,
    "project_name": "Random Quote Generator",
    "description":"Project that uses javascript to generate random quotes",
-    "technologies": "Javascript, CSS, HTML" ,
+   "technologies": ["Javascript", "CSS", "HTML"] ,
     "live_link": "https://franklynrod.github.io/random-quote-generator/",
     "github_link": "https://github.com/FranklynRod/random-quote-generator" ,
-    "image_urls": "/static/images/RandomQuoteGenerator2.png",
+    "image_urls": ["/static/images/RandomQuoteGenerator2.png"],
     "homepage_image": "/static/images/RandomQuoteGenerator.png" },
 
     {"id":1,
@@ -15,7 +15,7 @@
     "technologies": ["Javascript", "CSS", "HTML"] ,
     "live_link": "https://franklynrod.github.io/data-pagination-filtering/",
     "github_link": "https://github.com/FranklynRod/data-pagination-filtering" ,
-    "image_urls":"/static/images/EmployeeDirectory2.png",
+    "image_urls":["/static/images/EmployeeDirectory2.png"],
     "homepage_image":"/static/images/EmployeeDirectory.png" },
 
     {"id": 2,
@@ -24,7 +24,7 @@
      "technologies": ["Javascript", "CSS", "HTML"] ,
      "live_link": "https://franklynrod.github.io/interactive-form/",
      "github_link": "https://github.com/FranklynRod/interactive-form" ,
-     "image_urls": "/static/images/InteractiveForm2.png",
+     "image_urls": ["/static/images/InteractiveForm2.png"],
      "homepage_image":"/static/images/InteractiveForm.png" },
 
      {"id":3,
@@ -33,7 +33,7 @@
       "technologies": ["Javascript", "CSS", "HTML"] ,
       "live_link": "https://franklynrod.github.io/OOP_Game/",
       "github_link": "https://github.com/FranklynRod/OOP_Game" ,
-      "image_urls":"/static/images/OOPGame2.png",
+      "image_urls":["/static/images/OOPGame2.png"],
       "homepage_image":"/static/images/OOPGame.png" },
 
       {"id":4,
@@ -42,7 +42,7 @@
        "technologies": ["Javascript", "CSS", "HTML"] ,
        "live_link": "https://franklynrod.github.io/employee_directory/",
        "github_link": "https://github.com/FranklynRod/employee_directory" ,
-       "image_urls":"/static/images/API2.png",
+       "image_urls":["/static/images/API2.png"],
        "homepage_image":"/static/images/API.png" }
 
 ]

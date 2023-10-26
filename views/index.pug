@@ -25,5 +25,5 @@ block content
         .cell
           a(href=`projects/${project.id}`)
             img.thumbnail(src=`${project.homepage_image}`, alt=`image of ${project.project_name} site`)
-            h5 My Site
+            h5=`${project.project_name}`
 
