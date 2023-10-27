@@ -41,7 +41,6 @@ app.get('/projects/:id',(req,res, next) =>{
 app.use((req,res, next) =>{
     const error = new Error("Oops the page you're trying to visit does not exist");
     error.status = 404;
-    console.log(error.message);
     next(error)
     
 })
