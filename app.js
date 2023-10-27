@@ -28,7 +28,17 @@ app.get('/projects/:id',(req,res) =>{
     res.render('project',{project: project});
 })
 
-// Errors
+// 404 Error
+app.use((req,res, next) =>{
+    const error = new Error('Page Not Found');
+    error.status = 404
+    error.message = 'Page not found'
+    console.log(error);
+    
+})
+// app.get('/project/noroute',(req,res) =>{
+//     res.render('index',  {projects} );
+// })
 
 
 app.listen(3000, () => {
