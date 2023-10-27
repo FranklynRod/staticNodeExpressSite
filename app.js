@@ -22,23 +22,36 @@ app.get('/about',(req,res) =>{
 })
 
 // GET Projects
-app.get('/projects/:id',(req,res) =>{
+app.get('/projects/:id',(req,res, next) =>{
+
     const projectId = req.params.id
     const project= projects.find(({id}) => id === parseInt(projectId))
-    res.render('project',{project: project});
+    if (project){
+        res.render('project',{project: project});
+    }else{
+        const error = new Error("Project you're trying to find doesn't exist");
+        error.status = 404;
+        next(error);
+    };
+    
+
 })
 
 // 404 Error
 app.use((req,res, next) =>{
-    const error = new Error('Page Not Found');
-    error.status = 404
-    error.message = 'Page not found'
-    console.log(error);
+    const error = new Error("Oops the page you're trying to visit does not exist");
+    error.status = 404;
+    console.log(error.message);
     
 })
-// app.get('/project/noroute',(req,res) =>{
-//     res.render('index',  {projects} );
-// })
+//Global error
+app.use((err, req, res, next)=>{
+    const error = new Error();
+    error.status = err.status || 500;
+    error.message = err.message || 'Internal Error';
+    console.log(error.message);
+})
+
 
 
 app.listen(3000, () => {
