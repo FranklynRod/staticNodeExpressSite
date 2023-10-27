@@ -47,7 +47,6 @@ app.use((req,res, next) =>{
 })
 //Global error
 app.use((err, req, res, next)=>{
-    // const error = new Error();
     err.status = err.status || 500;
     err.message = err.message || 'Internal Error';
     console.log(err.message);
