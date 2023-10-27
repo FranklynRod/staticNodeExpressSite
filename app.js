@@ -42,14 +42,16 @@ app.use((req,res, next) =>{
     const error = new Error("Oops the page you're trying to visit does not exist");
     error.status = 404;
     console.log(error.message);
+    next(error)
     
 })
 //Global error
 app.use((err, req, res, next)=>{
-    const error = new Error();
-    error.status = err.status || 500;
-    error.message = err.message || 'Internal Error';
-    console.log(error.message);
+    // const error = new Error();
+    err.status = err.status || 500;
+    err.message = err.message || 'Internal Error';
+    console.log(err.message);
+    res.sent(err.message);
 })
 
 
