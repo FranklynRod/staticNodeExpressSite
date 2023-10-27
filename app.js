@@ -51,7 +51,7 @@ app.use((err, req, res, next)=>{
     err.status = err.status || 500;
     err.message = err.message || 'Internal Error';
     console.log(err.message);
-    res.sent(err.message);
+    res.send(err.message);
 })
 
 
